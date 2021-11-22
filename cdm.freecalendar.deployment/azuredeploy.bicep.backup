@@ -1,0 +1,75 @@
+param companyName string
+
+param projectName string
+
+param environment string
+
+param location string
+
+param sqlServerConnectionString string
+
+param serviceBusConnectionString string
+
+param appInsightsInstrumentationKey string
+
+param appServicePlanName string = format('{0}-{1}-plan', companyName, projectName)
+
+param storageAccountName string = format('{0}{1}sa', companyName, projectName)
+
+param functionAppName string = format('{0}-{1}-func-api', companyName, projectName)
+
+param functionAppConfigName string = format('{0}-{1}-func-config', companyName, projectName)
+
+resource storageAccountRes 'Microsoft.Storage/storageAccounts@2021-02-01' = {
+  name: storageAccountName
+  location: resourceGroup().location
+  kind: 'StorageV2'
+  sku: {
+    name: 'Standard_LRS'
+  }
+  properties: {
+    accessTier: 'Hot'
+    supportsHttpsTrafficOnly: true
+    networkAcls: {
+      bypass: 'AzureServices'
+      defaultAction: 'Allow'
+    }
+    encryption: {
+      services: {
+        file: {
+          enabled: true
+        }
+        blob: {
+          enabled: true
+        }
+      }
+      keySource: 'Microsoft.Storage'
+    }
+  }
+}
+
+resource functionAppApi 'Microsoft.Web/sites@2020-12-01' = {
+  name: functionAppName
+  location: resourceGroup().location
+  kind: 'functionapp'
+  properties: {
+    serverFarmId: appServicePlanName
+  }
+  dependsOn: [
+    storageAccountRes
+  ]
+}
+
+resource functionAppApiConfig 'Microsoft.Web/sites/config@2021-02-01' = {
+  parent: functionAppApi
+  name: 'appsettings'
+  properties: {
+    AzureWebJobsDisableHomepage: 'true'
+    AzureWebJobsStorage: 'DefaultEndpointsProtocol=https;AccountName=${storageAccountName};AccountKey=${listKeys('storageAccountID2', '2019-06-01').key1}'
+    WEBSITE_CONTENTAZUREFILECONNECTIONSTRING: 'DefaultEndpointsProtocol=https;AccountName=${storageAccountName};AccountKey=${listKeys('storageAccountID3', '2019-06-01').key1}'
+    WEBSITE_CONTENTSHARE: toLower(functionAppName)
+    FUNCTIONS_EXTENSION_VERSION: '~4'
+    APPINSIGHTS_INSTRUMENTATIONKEY: reference('insightsComponents.id', '2015-05-01').InstrumentationKey
+    FUNCTIONS_WORKER_RUNTIME: 'dotnet'
+  }
+}
