@@ -26,12 +26,4 @@ az group create --name $resourceGroupName --location $json.parameters.location.v
 # Resources deployment
 #########################
 
-$type = $json.GetType()
-
-Write-Host -ForegroundColor Yellow ($type | Format-Table | Out-String)
-
-$jsonString = ConvertTo-Json $json.parameters
-
-Write-Host -ForegroundColor Yellow $jsonString
-
 az deployment group create --resource-group $resourceGroupName --template-file "$deploymentFolder/azuredeploy.bicep" --parameters "$deploymentFolder/$parametersFile" --parameters serviceAppClientId=$appId 
