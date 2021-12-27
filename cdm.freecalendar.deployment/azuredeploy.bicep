@@ -12,6 +12,12 @@ param serviceBusConnectionString string
 
 param appInsightsInstrumentationKey string
 
+param serviceAppClientId string
+
+param serviceAppUri string
+
+param frontendAppClientId string
+
 param appServicePlanName string = format('{0}-{1}-plan', companyName, projectName)
 
 param storageAccountName string = format('{0}{1}sa', companyName, projectName)
@@ -58,4 +64,36 @@ resource functionAppApi 'Microsoft.Web/sites@2020-12-01' = {
   dependsOn: [
     storageAccountRes
   ]
+}
+
+resource functionAppApiAuthentication 'Microsoft.Web/sites/config@2021-02-01' = if(serviceAppClientId != '') {
+  parent: functionAppApi
+  name: 'authsettingsV2'
+  location: resourceGroup().location
+  properties: {
+    platform: {
+      enabled: true
+    }
+    globalValidation: {
+      requireAuthentication: true
+      unauthenticatedClientAction: 'RedirectToLoginPage'
+      redirectToProvider: 'AzureActiveDirectory'
+    }
+    identityProviders: {
+      azureActiveDirectory: {
+        enabled: true
+        registration: {
+          openIdIssuer: 'https://login.microsoftonline.com/${subscription().tenantId}'
+          clientId: serviceAppClientId
+          clientSecretSettingName: 'MICROSOFT_PROVIDER_AUTHENTICATION_SECRET'
+        }
+        isAutoProvisioned: true
+      }
+    }
+    login: {
+      tokenStore: {
+        enabled: true
+      }
+    }
+  }
 }

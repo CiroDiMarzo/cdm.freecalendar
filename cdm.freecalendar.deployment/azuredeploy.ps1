@@ -1,17 +1,37 @@
-# To execute this file I had to run this command to avoid a permission denied
-# error from the VS Code task runner:
-#   sudo chmod -R 777 ./cdm.freecalendar.deployment/azuredeploy.ps1
+. "$PSScriptRoot\azuredeploy.parameters.ps1"
 
-$deploymentFolder = './cdm.freecalendar.deployment/'
+#########################
+# AD App Registration
+#########################
 
-$parametersFile = 'azuredeploy.parameters.json'
+$serviceAppName = "$($json.parameters.companyName.value)-$($json.parameters.projectName.value)-$($json.parameters.environment.value)-serviceApp"
 
-az login
+$appId = az ad app create --display-name $serviceAppName --available-to-other-tenants $false --oauth2-allow-implicit-flow $false --query "appId" --output "tsv"
 
-$json = Get-Content "$deploymentFolder/$parametersFile" | Out-String | ConvertFrom-Json
+az ad app update --id $appId --reply-urls "$($json.parameters.serviceAppUri.value)/.auth/login/aad/callback" --identifier-uris "api://$appId"
 
-$resourceGroupName = [string]::Format('{0}-{1}-{2}-rg', $json.parameters.companyName.value, $json.parameters.projectName.value, $json.parameters.environment.value)
+az ad app permission add --id $appId --api 00000003-0000-0000-c000-000000000000 --api-permissions "5c28f0bf-8a70-41f1-8ab2-9032436ddb65=Scope"
+
+az ad app permission add --id $appId --api 00000003-0000-0000-c000-000000000000 --api-permissions "df021288-bdef-4463-88db-98f22de89214=Role"
+
+$json.parameters.serviceAppClientId.value = $appId
+
+#########################
+# Resource group
+#########################
 
 az group create --name $resourceGroupName --location $json.parameters.location.value
 
-az deployment group create --resource-group $resourceGroupName --template-file "$deploymentFolder/azuredeploy.bicep" --parameters "$deploymentFolder/$parametersFile"
+#########################
+# Resources deployment
+#########################
+
+$type = $json.GetType()
+
+Write-Host -ForegroundColor Yellow ($type | Format-Table | Out-String)
+
+$jsonString = ConvertTo-Json $json.parameters
+
+Write-Host -ForegroundColor Yellow $jsonString
+
+az deployment group create --resource-group $resourceGroupName --template-file "$deploymentFolder/azuredeploy.bicep" --parameters "$deploymentFolder/$parametersFile" --parameters serviceAppClientId=$appId 
