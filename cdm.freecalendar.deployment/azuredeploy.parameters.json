@@ -25,6 +25,15 @@
     },
     "appServicePlanName": {
       "value": ""
+    },
+    "serviceAppUri": {
+      "value": "http://localhost:7071"
+    },
+    "serviceAppClientId": {
+      "value": ""
+    },
+    "frontendAppClientId":{
+      "value": ""
     }
   }
 }

@@ -1,0 +1,479 @@
+[
+    {
+        "priceOffer": {
+            "basePrice": 91.352856738,
+            "unitMargin": 0.000,
+            "unloadingFee": 0.00000,
+            "totalUnloadingFee": 0.00000,
+            "totalDiscount": 0.0,
+            "unitDiscount": 0.0,
+            "discountedPrice": false,
+            "unloadingPlacesCount": 1,
+            "productQuantity": 10.00,
+            "totalMargin": 0.00000,
+            "totalPrice": 913.52856738000,
+            "totalPriceDiscounted": 913.52856738000,
+            "unitPrice": 91.352856738,
+            "unitPriceDiscounted": 91.352856738,
+            "vatRate": 0.077,
+            "unitVat": 7.034169968826,
+            "totalVat": 70.34169968826000,
+            "outputUnitCode": 1,
+            "promotion": {
+                "id": 36,
+                "internalName": "Aktion for Product Type Fuel",
+                "descriptionDE": "Text PROMOTION DE",
+                "descriptionFR": "Text PROMOTION FR",
+                "promotionType": 0,
+                "discountCode": null,
+                "minimalQuantity": 50.00,
+                "unitCode": 1,
+                "chfAmount": 200.00,
+                "validityPeriodStart": "2021-12-01T00:00:00",
+                "validityPeriodEnd": "2022-12-14T00:00:00",
+                "validityHourStart": "8:00",
+                "validityHourEnd": "8:00",
+                "validityPeriod": "12/1/2021 9:00 - 12/14/2022 9:00",
+                "validityDelimitation": 0,
+                "holdingId": 1,
+                "productTypeId": 98,
+                "productId": null,
+                "emailContributionDE": "Email PROMOTION DE",
+                "emailContributionFR": "Email PROMOTION FR"
+            },
+            "disporegion": {
+                "id": 110,
+                "name": "5_Bern-Mittelland",
+                "productTypeId": 98,
+                "productType": null,
+                "showWeeks": 1,
+                "deliveryWaitTime": 0,
+                "textDe": "",
+                "textFr": ""
+            }
+        },
+        "shopId": 171,
+        "shop": {
+            "id": 171,
+            "name": "AGROLA Bern",
+            "emailAddress": null,
+            "zones": [
+                {
+                    "id": 33,
+                    "zoneId": 600045,
+                    "name": "AGROLA Bern, Bern 3001",
+                    "newsletter": false,
+                    "shopId": 171,
+                    "woodDisporegionId": 111,
+                    "fuelDisporegionId": 110,
+                    "woodDisporegion": null,
+                    "fuelDisporegion": null,
+                    "postalCodes": [
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 116,
+                            "postalCodeId": "c04b910e-4522-4f16-9de2-39f38ace1cf0",
+                            "name": "Uettligen",
+                            "orderNumber": 1751,
+                            "npa": 3043,
+                            "postalCodeAddiction": "00",
+                            "supplement": false,
+                            "zoneId": 33
+                        },
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 1452,
+                            "postalCodeId": "35cdc88d-460f-4003-8f36-f684ddd7c9c7",
+                            "name": "Bern 94 UBS",
+                            "orderNumber": 1001419,
+                            "npa": 3000,
+                            "postalCodeAddiction": "94",
+                            "supplement": false,
+                            "zoneId": 33
+                        },
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 10405,
+                            "postalCodeId": "189bc2ac-36d1-457a-95a3-ee584fea3375",
+                            "name": "Bern 15",
+                            "orderNumber": 1682,
+                            "npa": 3000,
+                            "postalCodeAddiction": "15",
+                            "supplement": false,
+                            "zoneId": 33
+                        }
+                    ],
+                    "products": null,
+                    "zoneProduct": [
+                        {
+                            "zoneId": 33,
+                            "productId": 96,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 97,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 98,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 99,
+                            "unloadingFee": 0.00
+                        }
+                    ]
+                }
+            ],
+            "holding": null,
+            "holdingId": 1,
+            "address": "AGROLA Bern\n Erlachstrasse 5\n 3001 Bern",
+            "products": null
+        },
+        "productId": 97,
+        "product": {
+            "id": 97,
+            "nameFr": "AGROLA 160 Oeko-Huile - 20°C",
+            "nameDe": "AGROLA 160 Oeko-Heizöl - 20°C",
+            "productTemplate": [
+                {
+                    "template": "<div style=\"display: flex; justify-content: center; background-color: #f9f9f9; color: #4a4a4a; font: 22px Droid Sans, sans-serif;\">\n  <div style=\"padding: 0.5rem; padding-left: 0\">\n    <img\n      src=\"{{image}}\"\n      width=\"112\"\n      alt=\"Product image\"\n      style=\"align-self: flex-start\"\n    />\n  </div>\n\n  <div\n    style=\"\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      padding: 0.5rem;\n      padding-left: 1.5rem;\n    \"\n  >\n    <p style=\"margin: 12px 0;\">\n      <span style=\"color: #00ad00; font-size: larger; display: block;\"\n        ><strong\n          >Das Klimafreundliche\n<br />AGROLA 160<br />Oeko-Heizöl - 20°C</strong\n        ></span\n      >\n\n      <strong style=\"margin-top: 0.5rem; font-size: large; display: block;\"\n        >{{unitPrice}} CHF</strong\n      >\n      <strong style=\"margin-top: 0.5rem; font-size: small; display: block;\"\n        >je 100 Liter bei {{quantity}} Liter</strong\n      >\n    </p>\n\n    <p style=\"margin: 12px 0;\">\n\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >inkl. MwSt., inkl. CO<sub>2</sub> Abgabe</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >Lieferzeit: ca. 3 Wochen</span\n      >\n      <strong style=\"font-size: large; margin-top: 0.25rem; display: block;\"\n        >{{totalPriceDiscounted}} CHF Online-Preis</strong\n      >\n      <p>{{discount}}</p>\n    </p>\n\n\n  </div>\n</div>",
+                    "language": "DE"
+                },
+                {
+                    "template": "<div style=\"display: flex; justify-content: center; background-color: #f9f9f9; color: #4a4a4a; font: 22px Droid Sans, sans-serif;\">\n  <div style=\"padding: 0.5rem; padding-left: 0\">\n    <img\n      src=\"{{image}}\"\n      width=\"112\"\n      alt=\"Product image\"\n      style=\"align-self: flex-start\"\n    />\n  </div>\n\n  <div\n    style=\"\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      padding: 0.5rem;\n      padding-left: 1.5rem;\n    \"\n  >\n    <p style=\"margin: 12px 0;\">\n      <span style=\"color: #00ad00; font-size: larger; display: block;\"\n        ><strong\n          >écologique<br />AGROLA 160<br />mazout de chauffage éco - 20°C</strong\n        ></span\n      >\n\n      <strong style=\"margin-top: 0.5rem; font-size: large; display: block;\"\n        >{{unitPrice}} CHF</strong\n      >\n      <strong style=\"margin-top: 0.5rem; font-size: small; display: block;\"\n        >par 100 litres avec {{quantity}} litres</strong\n      >\n    </p>\n\n    <p style=\"margin: 12px 0;\">\n      <span style=\"font-size: small; display: block;\"\n        >- 1.00 CHF / 100 litres Rabais promotionel</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\">\n        TVA Comprise, taxe CO<sub>2</sub> incluse</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >délai de livraison: env. 1 semaine</span\n      >\n      <strong style=\"font-size: large; margin-top: 0.25rem; display: block;\"\n        >{{totalPriceDiscounted}} CHF Online-Preis</strong\n      >\n      <p>{{discount}}</p>\n    </p>\n\n  </div>\n</div>",
+                    "language": "FR"
+                }
+            ],
+            "productImageUrl": "https://fenacodevapscoredatast.blob.core.windows.net/agropolis-product-image-container/25112021091645Heiz%C3%B6l%20oeko%20130.png",
+            "productType": {
+                "id": 98,
+                "nameDe": "Heizöl",
+                "nameFr": "Combustible",
+                "productName": "Fuel",
+                "description": "Fuel"
+            }
+        }
+    },
+    {
+        "priceOffer": {
+            "basePrice": 89.95275243,
+            "unitMargin": 0.000,
+            "unloadingFee": 0.00000,
+            "totalUnloadingFee": 0.00000,
+            "totalDiscount": 0.0,
+            "unitDiscount": 0.0,
+            "discountedPrice": false,
+            "unloadingPlacesCount": 1,
+            "productQuantity": 10.00,
+            "totalMargin": 0.00000,
+            "totalPrice": 899.5275243000,
+            "totalPriceDiscounted": 899.5275243000,
+            "unitPrice": 89.95275243,
+            "unitPriceDiscounted": 89.95275243,
+            "vatRate": 0.077,
+            "unitVat": 6.92636193711,
+            "totalVat": 69.2636193711000,
+            "outputUnitCode": 1,
+            "promotion": {
+                "id": 36,
+                "internalName": "Aktion for Product Type Fuel",
+                "descriptionDE": "Text PROMOTION DE",
+                "descriptionFR": "Text PROMOTION FR",
+                "promotionType": 0,
+                "discountCode": null,
+                "minimalQuantity": 50.00,
+                "unitCode": 1,
+                "chfAmount": 200.00,
+                "validityPeriodStart": "2021-12-01T00:00:00",
+                "validityPeriodEnd": "2022-12-14T00:00:00",
+                "validityHourStart": "8:00",
+                "validityHourEnd": "8:00",
+                "validityPeriod": "12/1/2021 9:00 - 12/14/2022 9:00",
+                "validityDelimitation": 0,
+                "holdingId": 1,
+                "productTypeId": 98,
+                "productId": null,
+                "emailContributionDE": "Email PROMOTION DE",
+                "emailContributionFR": "Email PROMOTION FR"
+            },
+            "disporegion": {
+                "id": 110,
+                "name": "5_Bern-Mittelland",
+                "productTypeId": 98,
+                "productType": null,
+                "showWeeks": 1,
+                "deliveryWaitTime": 0,
+                "textDe": "",
+                "textFr": ""
+            }
+        },
+        "shopId": 171,
+        "shop": {
+            "id": 171,
+            "name": "AGROLA Bern",
+            "emailAddress": null,
+            "zones": [
+                {
+                    "id": 33,
+                    "zoneId": 600045,
+                    "name": "AGROLA Bern, Bern 3001",
+                    "newsletter": false,
+                    "shopId": 171,
+                    "woodDisporegionId": 111,
+                    "fuelDisporegionId": 110,
+                    "woodDisporegion": null,
+                    "fuelDisporegion": null,
+                    "postalCodes": [
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 116,
+                            "postalCodeId": "c04b910e-4522-4f16-9de2-39f38ace1cf0",
+                            "name": "Uettligen",
+                            "orderNumber": 1751,
+                            "npa": 3043,
+                            "postalCodeAddiction": "00",
+                            "supplement": false,
+                            "zoneId": 33
+                        },
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 1452,
+                            "postalCodeId": "35cdc88d-460f-4003-8f36-f684ddd7c9c7",
+                            "name": "Bern 94 UBS",
+                            "orderNumber": 1001419,
+                            "npa": 3000,
+                            "postalCodeAddiction": "94",
+                            "supplement": false,
+                            "zoneId": 33
+                        },
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 10405,
+                            "postalCodeId": "189bc2ac-36d1-457a-95a3-ee584fea3375",
+                            "name": "Bern 15",
+                            "orderNumber": 1682,
+                            "npa": 3000,
+                            "postalCodeAddiction": "15",
+                            "supplement": false,
+                            "zoneId": 33
+                        }
+                    ],
+                    "products": null,
+                    "zoneProduct": [
+                        {
+                            "zoneId": 33,
+                            "productId": 96,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 97,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 98,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 99,
+                            "unloadingFee": 0.00
+                        }
+                    ]
+                }
+            ],
+            "holding": null,
+            "holdingId": 1,
+            "address": "AGROLA Bern\n Erlachstrasse 5\n 3001 Bern",
+            "products": null
+        },
+        "productId": 98,
+        "product": {
+            "id": 98,
+            "nameFr": "AGROLA 130 Oeko-Huile",
+            "nameDe": "AGROLA 130 Oeko-Heizöl",
+            "productTemplate": [
+                {
+                    "template": "<div style=\"display: flex; justify-content: center; background-color: #f9f9f9; color: #4a4a4a; font: 22px Droid Sans, sans-serif;\">\n  <div style=\"padding: 0.5rem; padding-left: 0\">\n    <img\n      src=\"{{image}}\"\n      width=\"112\"\n      alt=\"Product image\"\n      style=\"align-self: flex-start\"\n    />\n  </div>\n\n  <div\n    style=\"\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      padding: 0.5rem;\n      padding-left: 1.5rem;\n    \"\n  >\n    <p style=\"margin: 12px 0;\">\n      <span style=\"color: #f17000; font-size: larger; display: block;\"\n        ><strong\n          >Das Günstige<br />AGROLA 100<br />Heizöl extra gugu</strong\n        ></span\n      >\n\n      <strong style=\"margin-top: 0.5rem; font-size: large; display: block;\"\n        >{{unitPrice}} CHF</strong\n      >\n      <strong style=\"margin-top: 0.5rem; font-size: small; display: block;\"\n        >je 100 Liter bei {{quantity}} Liter</strong\n      >\n    </p>\n\n    <p style=\"margin: 12px 0;\">\n      <span style=\"font-size: small; display: block;\"\n        >- 1.00 CHF / 100 Liter Online-Rabatt</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >inkl. MwSt., inkl. CO<sub>2</sub> Abgabe</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >Lieferzeit: ca. 1 Woche</span\n      >\n      <strong style=\"font-size: large; margin-top: 0.25rem; display: block;\"\n        >{{discount}} CHF Online-Preis</strong\n      >\n    </p>\n\n    <p style=\"font-size: small; margin: 12px 0;\">\n      Heizöl extra leicht Euro-Qualität darf in Anlagen oder betrieblichen\n      Einheiten kleiner als 5 MW nur noch bis zum 31. Mai 2023 eingesetzt\n      werden.\n    </p>\n  </div>\n</div>",
+                    "language": "DE"
+                },
+                {
+                    "template": "<div style=\"display: flex; justify-content: center; background-color: #f9f9f9; color: #4a4a4a; font: 22px Droid Sans, sans-serif;\">\n  <div style=\"padding: 0.5rem; padding-left: 0\">\n    <img\n      src=\"{{image}}\"\n      width=\"112\"\n      alt=\"Product image\"\n      style=\"align-self: flex-start\"\n    />\n  </div>\n\n  <div\n    style=\"\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      padding: 0.5rem;\n      padding-left: 1.5rem;\n    \"\n  >\n    <p style=\"margin: 12px 0;\">\n      <span style=\"color: #f17000; font-size: larger; display: block;\"\n        ><strong\n          >avantageux<br />AGROLA 100<br />mazout de chauffage el</strong\n        ></span\n      >\n\n      <strong style=\"margin-top: 0.5rem; font-size: large; display: block;\"\n        >{{price}} CHF</strong\n      >\n      <strong style=\"margin-top: 0.5rem; font-size: small; display: block;\"\n        >par 100 litres avec 500 litres</strong\n      >\n    </p>\n\n    <p style=\"margin: 12px 0;\">\n      <span style=\"font-size: small; display: block;\"\n        >- 1.00 CHF / 100 litres Rabais promotionel</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\">\n        TVA Comprise, taxe CO<sub>2</sub> incluse</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >délai de livraison: env. 1 semaine</span\n      >\n      <strong style=\"font-size: large; margin-top: 0.25rem; display: block;\"\n        >{{discount}} CHF Online-Preis</strong\n      >\n    </p>\n\n    <p style=\"font-size: small; margin: 12px 0;\">\n      Le mazout extra léger de qualité Euro ne peut être utilisé dans des\n      installations ou des unités d’exploitation de moins de 5 MW que\n      jusqu'au 31 mai 2023.\n    </p>\n  </div>\n</div>",
+                    "language": "FR"
+                }
+            ],
+            "productImageUrl": "https://fenacodevapsmodadmnst.blob.core.windows.net/agropolis-product-image-container/21092021091454agrola-100.png",
+            "productType": {
+                "id": 98,
+                "nameDe": "Heizöl",
+                "nameFr": "Combustible",
+                "productName": "Fuel",
+                "description": "Fuel"
+            }
+        }
+    },
+    {
+        "priceOffer": {
+            "basePrice": 88.55131695,
+            "unitMargin": 0.000,
+            "unloadingFee": 0.00000,
+            "totalUnloadingFee": 0.00000,
+            "totalDiscount": 0.0,
+            "unitDiscount": 0.0,
+            "discountedPrice": false,
+            "unloadingPlacesCount": 1,
+            "productQuantity": 10.00,
+            "totalMargin": 0.00000,
+            "totalPrice": 885.5131695000,
+            "totalPriceDiscounted": 885.5131695000,
+            "unitPrice": 88.55131695,
+            "unitPriceDiscounted": 88.55131695,
+            "vatRate": 0.077,
+            "unitVat": 6.81845140515,
+            "totalVat": 68.1845140515000,
+            "outputUnitCode": 1,
+            "promotion": {
+                "id": 36,
+                "internalName": "Aktion for Product Type Fuel",
+                "descriptionDE": "Text PROMOTION DE",
+                "descriptionFR": "Text PROMOTION FR",
+                "promotionType": 0,
+                "discountCode": null,
+                "minimalQuantity": 50.00,
+                "unitCode": 1,
+                "chfAmount": 200.00,
+                "validityPeriodStart": "2021-12-01T00:00:00",
+                "validityPeriodEnd": "2022-12-14T00:00:00",
+                "validityHourStart": "8:00",
+                "validityHourEnd": "8:00",
+                "validityPeriod": "12/1/2021 9:00 - 12/14/2022 9:00",
+                "validityDelimitation": 0,
+                "holdingId": 1,
+                "productTypeId": 98,
+                "productId": null,
+                "emailContributionDE": "Email PROMOTION DE",
+                "emailContributionFR": "Email PROMOTION FR"
+            },
+            "disporegion": {
+                "id": 110,
+                "name": "5_Bern-Mittelland",
+                "productTypeId": 98,
+                "productType": null,
+                "showWeeks": 1,
+                "deliveryWaitTime": 0,
+                "textDe": "",
+                "textFr": ""
+            }
+        },
+        "shopId": 171,
+        "shop": {
+            "id": 171,
+            "name": "AGROLA Bern",
+            "emailAddress": null,
+            "zones": [
+                {
+                    "id": 33,
+                    "zoneId": 600045,
+                    "name": "AGROLA Bern, Bern 3001",
+                    "newsletter": false,
+                    "shopId": 171,
+                    "woodDisporegionId": 111,
+                    "fuelDisporegionId": 110,
+                    "woodDisporegion": null,
+                    "fuelDisporegion": null,
+                    "postalCodes": [
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 116,
+                            "postalCodeId": "c04b910e-4522-4f16-9de2-39f38ace1cf0",
+                            "name": "Uettligen",
+                            "orderNumber": 1751,
+                            "npa": 3043,
+                            "postalCodeAddiction": "00",
+                            "supplement": false,
+                            "zoneId": 33
+                        },
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 1452,
+                            "postalCodeId": "35cdc88d-460f-4003-8f36-f684ddd7c9c7",
+                            "name": "Bern 94 UBS",
+                            "orderNumber": 1001419,
+                            "npa": 3000,
+                            "postalCodeAddiction": "94",
+                            "supplement": false,
+                            "zoneId": 33
+                        },
+                        {
+                            "importId": "00000000-0000-0000-0000-000000000000",
+                            "id": 10405,
+                            "postalCodeId": "189bc2ac-36d1-457a-95a3-ee584fea3375",
+                            "name": "Bern 15",
+                            "orderNumber": 1682,
+                            "npa": 3000,
+                            "postalCodeAddiction": "15",
+                            "supplement": false,
+                            "zoneId": 33
+                        }
+                    ],
+                    "products": null,
+                    "zoneProduct": [
+                        {
+                            "zoneId": 33,
+                            "productId": 96,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 97,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 98,
+                            "unloadingFee": 0.00
+                        },
+                        {
+                            "zoneId": 33,
+                            "productId": 99,
+                            "unloadingFee": 0.00
+                        }
+                    ]
+                }
+            ],
+            "holding": null,
+            "holdingId": 1,
+            "address": "AGROLA Bern\n Erlachstrasse 5\n 3001 Bern",
+            "products": null
+        },
+        "productId": 99,
+        "product": {
+            "id": 99,
+            "nameFr": "AGROLA 100 Huile de chauffage extra légère modified",
+            "nameDe": "AGROLA 100 Heizöl extra leicht modified",
+            "productTemplate": [
+                {
+                    "template": "<div style=\"display: flex; justify-content: center; background-color: #f9f9f9; color: #4a4a4a; font: 22px Droid Sans, sans-serif;\">\n  <div style=\"padding: 0.5rem; padding-left: 0\">\n    <img\n      src=\"{{image}}\"\n      width=\"112\"\n      alt=\"Product image\"\n      style=\"align-self: flex-start\"\n    />\n  </div>\n\n  <div\n    style=\"\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      padding: 0.5rem;\n      padding-left: 1.5rem;\n    \"\n  >\n    <p style=\"margin: 12px 0;\">\n      <span style=\"color: #f17000; font-size: larger; display: block;\"\n        ><strong\n          >Das Günstige<br />AGROLA 100<br />Heizöl extra leicht</strong\n        ></span\n      >\n\n      <strong style=\"margin-top: 0.5rem; font-size: large; display: block;\"\n        >{{unitPrice}} CHF</strong\n      >\n      <strong style=\"margin-top: 0.5rem; font-size: small; display: block;\"\n        >je 100 Liter bei {{quantity}} Liter</strong\n      >\n    </p>\n\n    <p style=\"margin: 12px 0;\">\n      <span style=\"font-size: small; display: block;\"\n        >- 1.00 CHF / 100 Liter Online-Rabatt</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >inkl. MwSt., inkl. CO<sub>2</sub> Abgabe</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >Lieferzeit: ca. 1 Woche</span\n      >\n      <strong style=\"font-size: large; margin-top: 0.25rem; display: block;\"\n        >{{totalPriceDiscounted}} CHF Online-Preis</strong\n      >\n      <p>{{discount}}</p>\n    </p>\n\n    <p style=\"font-size: small; margin: 12px 0;\">\n      Heizöl extra leicht Euro-Qualität darf in Anlagen oder betrieblichen\n      Einheiten kleiner als 5 MW nur noch bis zum 31. Mai 2023 eingesetzt\n      werden.\n    </p>\n  </div>\n</div>",
+                    "language": "DE"
+                },
+                {
+                    "template": "<div style=\"display: flex; justify-content: center; background-color: #f9f9f9; color: #4a4a4a; font: 22px Droid Sans, sans-serif;\">\n  <div style=\"padding: 0.5rem; padding-left: 0\">\n    <img\n      src=\"{{image}}\"\n      width=\"112\"\n      alt=\"Product image\"\n      style=\"align-self: flex-start\"\n    />\n  </div>\n\n  <div\n    style=\"\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      padding: 0.5rem;\n      padding-left: 1.5rem;\n    \"\n  >\n    <p style=\"margin: 12px 0;\">\n      <span style=\"color: #f17000; font-size: larger; display: block;\"\n        ><strong\n          >avantageux<br />AGROLA 100<br />mazout de chauffage el</strong\n        ></span\n      >\n\n      <strong style=\"margin-top: 0.5rem; font-size: large; display: block;\"\n        >{{unitPrice}} CHF</strong\n      >\n      <strong style=\"margin-top: 0.5rem; font-size: small; display: block;\"\n        >par 100 litres avec {{quantity}} litres</strong\n      >\n    </p>\n\n    <p style=\"margin: 12px 0;\">\n      <span style=\"font-size: small; display: block;\"\n        >- 1.00 CHF / 100 litres Rabais promotionel</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\">\n        TVA Comprise, taxe CO<sub>2</sub> incluse</span\n      >\n      <span style=\"font-size: small; margin-top: 0.5rem; display: block;\"\n        >délai de livraison: env. 1 semaine</span\n      >\n      <strong style=\"font-size: large; margin-top: 0.25rem; display: block;\"\n        >{{totalPriceDiscounted}} CHF Online-Preis</strong\n      >\n      <p>{{discount}}</p>\n    </p>\n\n    <p style=\"font-size: small; margin: 12px 0;\">\n      Le mazout extra léger de qualité Euro ne peut être utilisé dans des\n      installations ou des unités d’exploitation de moins de 5 MW que\n      jusqu'au 31 mai 2023.\n    </p>\n  </div>\n</div>",
+                    "language": "FR"
+                }
+            ],
+            "productImageUrl": null,
+            "productType": {
+                "id": 98,
+                "nameDe": "Heizöl",
+                "nameFr": "Combustible",
+                "productName": "Fuel",
+                "description": "Fuel"
+            }
+        }
+    }
+]
