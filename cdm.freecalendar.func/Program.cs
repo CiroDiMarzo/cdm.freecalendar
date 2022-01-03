@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Azure.Functions.Worker.Configuration;
 
-namespace cdm_freecalendar
+namespace cdm_freecalendar_func
 {
     public class Program
     {

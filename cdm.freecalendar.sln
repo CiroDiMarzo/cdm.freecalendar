@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cdm_freecalendar", "cdm.freecalendar.func\cdm_freecalendar.csproj", "{6D084599-4279-44FB-A2F0-97F9FF684A0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cdm.freecalendar.minimalapi", "cdm.freecalendar.minimalapi\cdm.freecalendar.minimalapi.csproj", "{9390298A-3F81-498F-A227-C41782138DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cdm_freecalendar_func", "cdm.freecalendar.func\cdm_freecalendar_func.csproj", "{195ED2FA-6EE9-4A98-93D7-6597FB9F67F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +20,13 @@ Global
 		{6D084599-4279-44FB-A2F0-97F9FF684A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D084599-4279-44FB-A2F0-97F9FF684A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D084599-4279-44FB-A2F0-97F9FF684A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9390298A-3F81-498F-A227-C41782138DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9390298A-3F81-498F-A227-C41782138DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9390298A-3F81-498F-A227-C41782138DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9390298A-3F81-498F-A227-C41782138DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{195ED2FA-6EE9-4A98-93D7-6597FB9F67F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195ED2FA-6EE9-4A98-93D7-6597FB9F67F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195ED2FA-6EE9-4A98-93D7-6597FB9F67F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195ED2FA-6EE9-4A98-93D7-6597FB9F67F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
