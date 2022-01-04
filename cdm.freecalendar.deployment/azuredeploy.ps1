@@ -20,10 +20,10 @@ $json.parameters.serviceAppClientId.value = $appId
 # Resource group
 #########################
 
-az group create --name $resourceGroupName --location $json.parameters.location.value
+# az group create --name $resourceGroupName --location $json.parameters.location.value
 
 #########################
 # Resources deployment
 #########################
 
-az deployment group create --resource-group $resourceGroupName --template-file "$deploymentFolder/azuredeploy.bicep" --parameters "$deploymentFolder/$parametersFile" --parameters serviceAppClientId=$appId 
+# az deployment group create --resource-group $resourceGroupName --template-file "$deploymentFolder/azuredeploy.bicep" --parameters "$deploymentFolder/$parametersFile" --parameters serviceAppClientId=$appId 
